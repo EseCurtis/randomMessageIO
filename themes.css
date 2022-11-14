@@ -1,0 +1,96 @@
+
+@media (min-width: 600px) {
+    #__app:before,
+    #__app:after {
+        opacity: 0.2;
+    }
+}
+
+#__app[data-theme] {
+    background: #fff;
+    backdrop-filter: blur(20px);
+}
+
+#__app[data-theme]:after,
+#__app[data-theme]:before {
+    content: "";
+    top: -20%;
+    left: -50%;
+    width: 150vw;
+    height: 100vw;
+    position: fixed;
+    z-index: -1;
+    filter: blur(80px);
+    border-radius: 100%;
+}
+
+#__app[data-theme]:before {
+    top: unset;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+}
+
+[data-theme="--pearl"]:before {
+    background: rgba(255, 0, 170, 0.274);
+}
+[data-theme="--pearl"]:after {
+    background: rgb(252, 111, 135);
+    left: 70% !important;
+}
+
+[data-theme="--peach"]:before {
+    background: rgba(255, 30, 0, 0.274);
+    left: 70% !important;
+}
+[data-theme="--peach"]:after {
+    background: rgb(252, 174, 111);
+}
+
+[data-theme="--rose"]:before {
+    background: rgba(168, 26, 204, 0.274);
+}
+[data-theme="--rose"]:after {
+    background: rgb(192, 5, 36);
+    left: -70% !important;
+}
+
+[data-theme="--quantum"]:before {
+    background: rgba(0, 4, 255, 0.274);
+}
+[data-theme="--quantum"]:after {
+    background: rgb(255, 0, 43);
+    left: -70% !important;
+}
+
+[data-theme="--grass"]:before {
+    background: rgba(0, 255, 21, 0.274);
+}
+[data-theme="--grass"]:after {
+    background: rgb(111, 252, 205);
+    left: -70% !important;
+}
+
+[data-theme="--orchin"]:before {
+    background: rgba(255, 0, 140, 0.274);
+    left: -70% !important;
+}
+[data-theme="--orchin"]:after {
+    background: rgb(252, 124, 5);
+}
+
+[data-theme="--thanos"]:before {
+    background: rgba(204, 0, 255, 0.274);
+    left: -70% !important;
+}
+[data-theme="--thanos"]:after {
+    background: rgb(5, 9, 252);
+}
+
+[data-theme="--gold"]:before {
+    background: rgba(255, 238, 0, 0.274);
+}
+[data-theme="--gold"]:after {
+    background: rgb(252, 227, 5);
+    left: -70% !important;
+}

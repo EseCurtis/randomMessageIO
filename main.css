@@ -1,0 +1,73 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap";
+@import "./themes.css";
+
+* {
+    font-family: "poppins";
+    box-sizing: border-box;
+}
+
+#__app {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #aaa;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#__text {
+    font-size: 40px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.__credits {
+    background: rgba(255, 255, 255, 0.274);
+    border-radius: 20px;
+    bottom: 1em;
+    right: 1em;
+    position: fixed;
+    z-index: 5;
+    padding: 0.2em 1.5em; 
+    width: calc(100% - 2em);
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.__refresh {
+    position: fixed;
+    top: 1em ;
+    left: 1em;
+    background: rgb(1, 2, 15);
+    color: #fff;
+    border-radius: 100%;
+    padding: 1em;
+    display: flex;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.__refresh:active {
+    opacity: 0.5;
+}
+
+.__refresh svg {
+    width: 25px;
+    height: 25px;
+    transition: 0.5s;
+}
+
+.__refresh svg{
+    transform: rotate(-45deg);
+}
+
+
+.__refresh.loading svg {
+    transform: translate(100%, -100%);
+    opacity: 0;
+    transition: 0;
+}
