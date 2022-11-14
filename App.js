@@ -1,3 +1,4 @@
+import AppData from "./AppData.js"
 import MessagesData from "./MessagesData.js"
 import Randomizer from "./Randomizer.js"
 
@@ -18,6 +19,8 @@ document.body.onload = () => {
     App()
     
     const respawnToggler = $("#__respawn")
+    const brandElement = $(".__brand")
+    const creditElement = $(".__credits")
 
     respawnToggler.onclick = e => {
         const context = e.currentTarget
@@ -29,5 +32,9 @@ document.body.onload = () => {
             App()
         }, 1000)
     }
+
+    brandElement.innerText = AppData.name
+    brandElement.onclick = () => location.assign(AppData.githubRepositoryUrl)
     
+    creditElement.onclick = () => location.assign(AppData.authorUrl)
 }
