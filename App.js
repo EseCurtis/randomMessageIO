@@ -12,7 +12,6 @@ const App = () => {
     textFrame.innerText = randomMessageData.message
     appFrame.dataset.theme = randomMessageData.theme
 
-    
 }
 
 document.body.onload = () => {
