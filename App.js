@@ -1,26 +1,17 @@
 import AppData from "./AppData.js"
-import MessagesData from "./MessagesData.js"
-import Randomizer from "./Randomizer.js"
-
-const $ = _selector => document.querySelector(_selector)
+import generateMessage from "./GenerateMessage.js"
+import { openModal, closeModal } from "./ModalController.js"
+import { $ } from "./shortHand.js"
 
 const App = () => {
-    const appFrame = $("#__app")
-    const textFrame = $("#__text")
+    generateMessage()
 
-    const randomMessageData = Randomizer(MessagesData)
-
-    textFrame.innerText = randomMessageData.message
-    appFrame.dataset.theme = randomMessageData.theme
-
-}
-
-document.body.onload = () => {
-    App()
-    
     const respawnToggler = $("#__respawn")
     const brandElement = $(".__brand")
-    const creditElement = $(".__credits")
+    const creditElement = $(".__credits #--name")
+    const magicElement = $("#__magic")
+    const closeModalElement = $("#__close-modal")
+    const shareTextElement = $("#__share-text")
 
     respawnToggler.onclick = e => {
         const context = e.currentTarget
@@ -29,7 +20,7 @@ document.body.onload = () => {
 
         setTimeout(() => {
             context.classList.remove("loading")
-            App()
+            generateMessage()
         }, 1000)
     }
 
@@ -37,4 +28,20 @@ document.body.onload = () => {
     brandElement.onclick = () => location.assign(AppData.githubRepositoryUrl)
     
     creditElement.onclick = () => location.assign(AppData.authorUrl)
+
+    const tempMagicElementOnclick = magicElement.onclick
+
+    magicElement.onclick = () => {
+        openModal()
+    }
+    
+    closeModalElement.onclick = closeModal
+    shareTextElement.value = AppData.shareText
+}
+
+document.body.onload = () => {
+    App()
+
+    $("body").classList.add("loaded")
+    new ClipboardJS('#__magic');
 }
