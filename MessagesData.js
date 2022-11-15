@@ -21,12 +21,12 @@ const MessagesData = [
     },
     
     {
-        message: "You're can overcome it 😋!",
+        message: "You can overcome it 😋!",
         theme: "--orchin"
     },
     
     {
-        message: "You're and Sapa will be besties 🤣!",
+        message: "You and Sapa will be besties 🤣!",
         theme: "--thanos"
     },
     
