@@ -20,7 +20,7 @@
     height: 120vw;
     position: fixed;
     z-index: -1;
-    filter: blur(80px);
+    filter: blur(120px);
     border-radius: 100%;
 }
 
