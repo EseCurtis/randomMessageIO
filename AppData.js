@@ -1,5 +1,5 @@
 const AppData = {
-    name: "RaMeIO",
+    name: "RaMe-IO",
     author: "Ese Curtis",
     authorUrl: "https://esecurtis.com",
     dateCreated: "14/11/2022",

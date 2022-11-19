@@ -36,7 +36,7 @@
 }
 [data-theme="--pearl"]:after {
     background: rgb(252, 111, 135);
-    left: 70% !important;
+    left: 10% !important;
 }
 
 [data-theme="--peach"]:before {

@@ -45,6 +45,7 @@ body.loaded {
     font-weight: bold;
     font-size: 20px;
     z-index: 20;
+    color: #fff;
 }
 
 .__brand h3 {
@@ -57,7 +58,7 @@ body.loaded {
     right: 1em;
     background: rgb(1, 2, 15);
     color: #fff;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 1em;
     display: flex;
     overflow: hidden;
