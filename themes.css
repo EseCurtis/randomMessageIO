@@ -67,7 +67,7 @@
     background: rgba(0, 255, 21, 0.274);
 }
 [data-theme="--grass"]:after {
-    background: rgb(111, 252, 205);
+    background: rgb(111, 252, 205, 0.7);
     left: -70% !important;
 }
 
