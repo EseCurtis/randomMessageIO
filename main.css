@@ -30,8 +30,10 @@ body.loaded {
 
 #__text {
     font-size: 40px;
+    font-weight: 700;
     max-width: 80%;
     text-align: center;
+    color: #fff;
 }
 
 .__brand {
