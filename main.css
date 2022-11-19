@@ -95,6 +95,7 @@ body.loaded {
     width: calc(100% - 2em);
     text-align: center;
     display: flex;
+    color: #fff;
 }
 
 .__credits p {
