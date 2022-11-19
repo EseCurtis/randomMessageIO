@@ -7,7 +7,7 @@
 }
 
 #__app[data-theme] {
-    background: #fff;
+    background: #000;
     backdrop-filter: blur(20px);
 }
 
