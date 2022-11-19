@@ -63,12 +63,12 @@
 }
 
 [data-theme="--grass"]:before {
-    background: rgba(0, 255, 21, 0.274);
+    background: rgba(50, 25, 251, 0.274);
     left: -70% !important;
 
 }
 [data-theme="--grass"]:after {
-    background: rgb(111, 252, 205, 0.7);
+    background: rgb(151, 52, 205, 0.7);
 }
 
 [data-theme="--orchin"]:before {
