@@ -45,3 +45,7 @@ document.body.onload = () => {
     $("body").classList.add("loaded")
     new ClipboardJS('#__magic');
 }
+
+function gonative_library_ready(){
+  gonative_match_statusbar_to_body_background_color();
+}
